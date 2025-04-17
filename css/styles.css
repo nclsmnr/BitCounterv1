@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #f7931a;
+    --secondary: #1a1a2e;
+    --accent: #4cc2ff;
+    --dark: #0f0f1a;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.mono {
+    font-family: 'Space Mono', monospace;
+}
+
+.card {
+    background: rgba(26, 26, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.price-up { color: #00ff9d; }
+.price-down { color: #ff3a3a; }
+
+.progress-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #f7931a, #ffc107);
+    border-radius: 3px;
+}
+
+.countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #f7931a, #e14a32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tradingview-widget-container {
+    height: 500px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .tradingview-widget-container { height: 300px; }
+}
+
+.news-card:hover {
+    background: rgba(79, 79, 134, 0.3);
+}
+
+.fear-greed {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
